@@ -3,8 +3,7 @@
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px; 
-  margin-left: 0; 
-  margin-right: 0;
+  margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -89,9 +88,9 @@ font-style: normal;
 .order, .footer-page{
     background-color: #2e2f42;
 }
-.order, .button {
+/* .order, .button {
     text-align: center;
-}
+} */
 .page-title {
     font-size: 56px;
     font-weight: 700;
@@ -114,6 +113,8 @@ font-style: normal;
     box-shadow: 0px 4px 4px 0px #00000026;
     border: 0;
     min-width: 169px;
+    display: block;
+    margin: 0 auto;
 }
 .button:hover, .button:focus {
     background-color: #404bbf;
@@ -157,43 +158,58 @@ font-style: normal;
 .advantages-item {
     width: calc((100% - 72px) / 4);
 }
+.advantages-title {
+    margin-bottom: 8px;
+}
 /* TEAM */
 .team {
     background-color: #F4F4FD;
 }
+.team-title {
+    margin-bottom: 72px;
+}
 .team-list {
     display: flex;
     gap: 24px;
-    margin-top: 72px;
 }
 .team-list-item {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-text {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 8px; */
     text-align: center;
     padding: 32px 0;
+}
+.team-text-title {
+    margin-bottom: 8px;
+}
+/* PORTFOLIO */
+.portfolio-title {
+    margin-bottom: 72px;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    margin-top: 72px;
 }
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
 }
 .portfolio-text {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 8px; */
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: 0;
+}
+.portfolio-text-title {
+    margin-bottom: 8px;
 }
 /* FOOTER */
 .footer-page, .footer-page .logo-studio {
@@ -203,7 +219,7 @@ font-style: normal;
     padding: 100px 0;
 }
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 .footer-text {
