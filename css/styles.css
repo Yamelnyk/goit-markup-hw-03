@@ -1,31 +1,72 @@
 
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px; 
-  margin: 0 auto;
+/* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+
 img {
     display: block;
 }
+
+button {
+    cursor: pointer;
+}
+
+.list {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2f42
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFF;
     letter-spacing: 0.02em;
 }
-ul {
-    list-style-type: none;
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  margin-left: auto;
+  margin-right: auto;
 }
-a {
-    text-decoration: none;
-    color: #2e2f42
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
- /* < !-- HEADER --> */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+}
+/* ============== /COMMON STYLES ============== */
+
+/* ============== HEADER STYLES ==============*/
  .page-header {
      border-bottom: 1px solid #E7E9FC;
  }
@@ -42,23 +83,15 @@ a {
     display: flex;
     gap: 40px;   
  }
-.logo {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #4d5ae5; 
-}
+
 .header-logo {
     margin-right: 76px;
-    padding: 25.5px 0;
 }
 .logo-studio {
    color: #2e2f42;
 }
 .nav-link, .address-link {
+    display: block;
     padding: 24px 0;
 }
 .nav-list .link {
@@ -78,19 +111,17 @@ font-style: normal;
 .nav-list .link:active {
     text-decoration: underline;
 }
-/* ORDER */
-.section {
-    padding: 120px 0;
-}
+/* ============== /HEADER STYLES ============== */
+
+/* ================ ORDER STYLES ===================== */
+
 .order {
     padding: 188px 0;
 }
 .order, .footer-page{
     background-color: #2e2f42;
 }
-/* .order, .button {
-    text-align: center;
-} */
+
 .page-title {
     font-size: 56px;
     font-weight: 700;
@@ -98,7 +129,8 @@ font-style: normal;
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
-    margin: 0 auto 48px auto; ;
+    margin: 0 auto 48px auto; 
+    text-align: center;
 }
 .button {
     font-family: "Roboto", sans-serif;
@@ -107,14 +139,14 @@ font-style: normal;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    cursor: pointer;
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
     border: 0;
     min-width: 169px;
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button:hover, .button:focus {
     background-color: #404bbf;
@@ -126,7 +158,10 @@ font-style: normal;
     letter-spacing: 0.02em;
     line-height: 1.2;
 }
-/* ADVANTAGES */
+
+/* ================ /ORDER STYLES ===================== */
+
+/* ================ ADVANTAGES STYLES ================ */
 .section-title {
     color: #2e2f42;
     font-size: 36px;
@@ -161,7 +196,9 @@ font-style: normal;
 .advantages-title {
     margin-bottom: 8px;
 }
-/* TEAM */
+/* ================ /ADVANTAGES STYLES ================ */
+
+/* ================ TEAM STYLES ======================= */
 .team {
     background-color: #F4F4FD;
 }
@@ -188,7 +225,9 @@ font-style: normal;
 .team-text-title {
     margin-bottom: 8px;
 }
-/* PORTFOLIO */
+/* ================ /TEAM STYLES ======================= */
+
+/* ================ PORTFOLIO STYLES =================== */
 .portfolio-title {
     margin-bottom: 72px;
 }
@@ -202,9 +241,6 @@ font-style: normal;
     width: calc((100% - 48px) / 3);
 }
 .portfolio-text {
-    /* display: flex;
-    flex-direction: column;
-    row-gap: 8px; */
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: 0;
@@ -212,7 +248,9 @@ font-style: normal;
 .portfolio-text-title {
     margin-bottom: 8px;
 }
-/* FOOTER */
+/* ================ /PORTFOLIO STYLES =================== */
+
+/* ================ FOOTER STYLES ======================*/
 .footer-page, .footer-page .logo-studio {
     color: #f4f4fd
 } 
@@ -226,3 +264,4 @@ font-style: normal;
 .footer-text {
 max-width: 264px;
 }
+/* ================ /FOOTER STYLES ======================*/
